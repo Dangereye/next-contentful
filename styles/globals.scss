@@ -1,0 +1,36 @@
+@import "partials/variables";
+@import "partials/typography";
+
+@import "components/header";
+@import "components/footer";
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: $href;
+  text-decoration: none;
+}
+
+// Global
+body {
+  font-size: 1.6rem;
+  color: $text-dark;
+  background-color: $body-bg;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 120rem;
+  margin: 2rem auto 8rem;
+}
