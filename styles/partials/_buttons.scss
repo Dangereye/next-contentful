@@ -1,0 +1,14 @@
+button,
+.btn {
+  display: inline-block;
+  font-weight: 500;
+
+  &.large {
+    padding: 1.6rem 3.2rem;
+  }
+
+  &.primary {
+    color: #fff;
+    background-color: $accent;
+  }
+}

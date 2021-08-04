@@ -17,9 +17,11 @@ const Recipes = ({ recipes }) => {
   return (
     <div>
       <h2>Recipes</h2>
-      {recipes.map((recipe) => (
-        <RecipeCard key={recipe.sys.id} recipe={recipe} />
-      ))}
+      <div className="recipe-list">
+        {recipes.map((recipe) => (
+          <RecipeCard key={recipe.sys.id} recipe={recipe} />
+        ))}
+      </div>
     </div>
   );
 };

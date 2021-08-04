@@ -1,8 +1,10 @@
 @import "partials/variables";
 @import "partials/typography";
+@import "partials/buttons";
 
 @import "components/header";
 @import "components/footer";
+@import "components/recipe-card";
 
 // Reset
 * {
@@ -16,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 // Global
 body {
   font-size: 1.6rem;
@@ -25,6 +32,7 @@ body {
 
 .layout {
   min-height: 100vh;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -33,4 +41,11 @@ body {
   width: 100%;
   max-width: 120rem;
   margin: 2rem auto 8rem;
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 4rem;
+  row-gap: 6rem;
 }
