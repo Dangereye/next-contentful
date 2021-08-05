@@ -1,0 +1,47 @@
+.recipe-details {
+  &__banner {
+    img {
+      height: 45rem;
+      object-fit: cover;
+    }
+    h2 {
+      position: relative;
+      margin-top: -3.5rem;
+      margin-left: -1rem;
+      padding: 2rem;
+      max-width: max-content;
+      background-color: #fff;
+      line-height: 1.2;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &__info {
+    h3 {
+      margin-top: 3rem;
+    }
+  }
+
+  &__ingredients {
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      display: inline-block;
+      flex-basis: 1 1 max-content;
+      margin: 0.1rem;
+      padding: 1rem;
+      border: 1px solid $text-dark;
+    }
+  }
+
+  &__method {
+    h3 {
+      margin-top: 3rem;
+    }
+    p {
+      margin: 1rem 0;
+      max-width: 85ch;
+    }
+  }
+}
