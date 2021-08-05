@@ -9,7 +9,7 @@ export const getStaticProps = async () => {
 
   const res = await client.getEntries({ content_type: "recipe" });
 
-  return { props: { recipes: res.items } };
+  return { props: { recipes: res.items }, revalidate: 1 };
 };
 
 const Recipes = ({ recipes }) => {

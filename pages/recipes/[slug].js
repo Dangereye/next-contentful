@@ -22,7 +22,7 @@ export const getStaticProps = async ({ params }) => {
     content_type: "recipe",
     "fields.slug": params.slug,
   });
-  return { props: { recipe: items[0] } };
+  return { props: { recipe: items[0] }, revalidate: 1 };
 };
 
 const RecipeDetails = ({ recipe }) => {
