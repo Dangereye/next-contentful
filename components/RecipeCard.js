@@ -6,7 +6,7 @@ const RecipeCard = ({ recipe }) => {
   return (
     <div className="recipe-card">
       <div className="recipe-card__image">
-        <img
+        <Image
           src={`https:${thumbnail.fields.file.url}`}
           width={thumbnail.fields.file.details.image.width}
           height={thumbnail.fields.file.details.image.height}

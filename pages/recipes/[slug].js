@@ -31,11 +31,11 @@ const RecipeDetails = ({ recipe }) => {
   return (
     <div className="recipe-details">
       <div className="recipe-details__banner">
-        <img
+        <Image
           src={`https:${featuredImage.fields.file.url}`}
           width={featuredImage.fields.file.details.image.width}
           height={featuredImage.fields.file.details.image.height}
-        ></img>
+        ></Image>
         <h2>{title}</h2>
       </div>
       <div className="recipe-details__info">
