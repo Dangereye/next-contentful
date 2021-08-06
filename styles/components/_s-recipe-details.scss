@@ -1,0 +1,18 @@
+.skeleton {
+  max-width: $page-width;
+
+  & > * {
+    background: #dbcc1a;
+  }
+
+  &__banner {
+    max-width: 120rem;
+    height: 40rem;
+  }
+
+  &__header {
+  }
+
+  &__content {
+  }
+}
