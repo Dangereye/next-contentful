@@ -2,7 +2,7 @@ const Skeleton = () => {
   return (
     <div className="skeleton">
       <div className="skeleton__banner"></div>
-      <div className="skeleton__header"></div>
+      <h2></h2>
       <div className="skeleton__content"></div>
       <div className="Skeleton__content"></div>
       <div className="skeleton__content"></div>
