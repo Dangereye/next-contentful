@@ -10,9 +10,20 @@
     height: 40rem;
   }
 
-  &__header {
+  h2 {
+    position: relative;
+    margin-top: -3.5rem;
+    margin-left: -1rem;
+    height: 6.8rem;
+    width: 50rem;
+    background-color: #fff;
+    line-height: 1.2;
+    box-shadow: $box-shadow;
   }
 
   &__content {
+    margin: 2rem 0;
+    width: 80ch;
+    height: 1.6rem;
   }
 }
