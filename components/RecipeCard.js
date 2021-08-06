@@ -21,7 +21,7 @@ const RecipeCard = ({ recipe }) => {
         </div>
         <div className="recipe-card__actions">
           <Link href={`/recipes/${slug}`}>
-            <a className="btn large primary">Cook</a>
+            <a className="btn large primary">Cook This</a>
           </Link>
         </div>
       </div>

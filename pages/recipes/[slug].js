@@ -14,7 +14,7 @@ export const getStaticPaths = async () => {
       params: { slug: item.fields.slug },
     };
   });
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 };
 
 export const getStaticProps = async ({ params }) => {
@@ -26,6 +26,7 @@ export const getStaticProps = async ({ params }) => {
 };
 
 const RecipeDetails = ({ recipe }) => {
+  if (!recipe) return <dvi>Loading</dvi>;
   const { featuredImage, title, cookingTime, ingredients, method } =
     recipe.fields;
   return (
